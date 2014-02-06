@@ -1,0 +1,62 @@
+% define the elements of the title page
+
+% title of work
+\newcommand{\MyTitle}{Very Impressive Bachelor Thesis}
+% kind of thesis (Bachelor Thesis, Master Thesis, ...)
+\newcommand{\MyThesisType}{Bachelor Thesis}
+% author (lastname, firstname)
+\newcommand{\MyAuthor}{Mustermann, Matthias}
+
+% Sektion
+\newcommand{\MySektion}{Mathematisch-Naturwissenschaftliche Sektion}
+% Departement/Fachbereich
+\newcommand{\MyDepartement}{Fachbereich Informatik und Informationswissenschaft}
+
+% Corrector Description (Gutachter, Corrector)
+\newcommand{\MyCorrectorType}{Gutachter}
+% Corrector/Gutachter1
+\newcommand{\MyCorrectorA}{Prof. Dr. Arthus Hinz}
+% Corrector/Gutachter2
+\newcommand{\MyCorrectorB}{Prof. Dr. B\"arbel Kunz}
+
+% This is the title page itself
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% You probably don't need to change anything here. %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\pagestyle{empty}
+\begin{center}
+
+{\Huge \textbf{\MyTitle}} \\[2cm]
+
+{\Large \MyThesisType} \\[1cm]
+
+{\Large vorgelegt von \\[.3cm]
+\MyAuthor} \\[1cm]
+
+{\Large an der}
+
+\resizebox{.9\linewidth}{!}{\includegraphics{title/unisignet.pdf}}
+
+{\Large \MySektion}\\[1cm]
+
+{\Large \MyDepartement}\\[1cm]
+
+{\Large
+\begin{enumerate}
+    \item \MyCorrectorType: \MyCorrectorA
+    \item \MyCorrectorType: \MyCorrectorB
+\end{enumerate}
+} \ \\[1cm]
+
+{\Large Konstanz, \the\year}
+
+\end{center}
+
+\cleardoublepage
+
+%reset pagestyle
+\pagestyle{plain}
+%reset the page counter
+\setcounter{page}{1}
+\end{titlepage}
