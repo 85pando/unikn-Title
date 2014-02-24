@@ -2,6 +2,8 @@
 
 This title.tex creates a title page according to the requirements of the Universität Konstanz as stated on the [page of the Zentrales Prüfungsamt][1]. This title page was created 2014, so if you find, that the format has changed, feel free to correct it and send a patch.
 
+The Matrikel-Nr was added to the universities version, as some departements/chairs want this. If you don't need this, just leave it empty.
+
 ## Usage
 
 1. Either clone the whole repository or download the ``title.tex`` and the ``unisignet.pdf``.
